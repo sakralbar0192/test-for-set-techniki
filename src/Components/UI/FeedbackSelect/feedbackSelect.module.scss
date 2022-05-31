@@ -1,0 +1,38 @@
+.feedbackSelect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 20px;
+    color: #ffffff;
+
+    select {
+        background-color: white;
+        border-radius: 12px;
+        font-size: 1rem;
+        border: 1px solid #ced4da;
+        appearance: none;
+        color: #575757;
+        padding: 10px 15px;
+        padding-right: 25px;
+        
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-right: 1px solid #676870;
+        border-bottom: 1px solid #676870;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 14px;
+        bottom: 20px;
+        margin: auto;
+        transition: .3s ease-in-out;
+    }
+}

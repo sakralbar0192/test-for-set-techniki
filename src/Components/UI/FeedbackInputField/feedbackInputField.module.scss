@@ -1,0 +1,42 @@
+.feedbackInputField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 20px;
+    
+    label {
+        color: #ffffff
+    }
+
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: white;
+        border-radius: 12px;
+        font-size: 1rem;
+        border: 1px solid #ced4da;
+        appearance: none;
+        color: #575757;
+        padding: 10px 15px;
+        padding-right: 25px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    p {
+        display: none;
+        margin: 0;
+        color: red;
+        font-size: 12px;
+    }
+}
+
+.invalidField {
+    margin: 0 0 4px;
+
+    p {
+        display: block;
+    }
+}
